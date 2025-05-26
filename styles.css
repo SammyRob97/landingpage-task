@@ -33,8 +33,9 @@ html, body{
 }
 
 .head-links{
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
+    font-weight: 500;
     color: var(--hdscndtext);
     display: flex;
     justify-content: space-evenly;
@@ -119,7 +120,7 @@ html, body{
 }
 
 .man{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 250px;
     height: 250px;
     grid-area: pic1;
@@ -127,7 +128,7 @@ html, body{
 }
 
 .grass{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 250px;
     height: 250px;
     grid-area: pic2;
@@ -135,7 +136,7 @@ html, body{
 }
 
 .desk{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 250px;
     height: 250px;
     grid-area: pic3;
@@ -143,7 +144,7 @@ html, body{
 }
 
 .stairs{
-    margin-top: 50px;
+    margin-top: 150px;
     width: 250px;
     height: 250px;
     grid-area: pic4;
@@ -151,6 +152,8 @@ html, body{
 }
 
 .fig-cap{
+    opacity: 0.8;
+    margin-bottom: 200px;
     text-align: center;
     font-family: "Roboto";
     font-size: 18px;
@@ -170,7 +173,7 @@ html, body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 250px;
+    height: 500px;
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
@@ -181,13 +184,86 @@ html, body{
     width: 100%;
 }
 
-.quote{        
-    font-size: 1.5rem;
+.quote{
+    opacity: 0.8;
+    font-size: 36px;
     line-height: 1.4;
 }
 
 .banjo{
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: right;
+}
+
+/*-------------------------------------------------------------*/
+
+.action-box {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.action-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  min-height: 100px;
+  width: 800px;
+  background-color: var(--buttonbanner);
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+}
+
+.action-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.action-head,
+.action-text {
+  font-family: "Roboto", sans-serif;
+  color: var(--hdmaintext);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.action-head {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.action-text {
+  font-size: 16px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+}
+
+.action-button button {
+  height: 40px;
+  width: 120px;
+  border: none;
+  background-color: var(--buttonbanner);
+  color: var(--hdmaintext);
+  border-radius: 8px;
+  cursor: pointer;
+  border: 3px solid;
+}
+
+
+/*-------------------------------------------------------------*/
+
+.footer{
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+    background-color: var(--darkbg);
+    color: var(--hdmaintext);
 }
